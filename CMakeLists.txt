@@ -4,6 +4,8 @@ project(CHttp)
 
 add_library(chttp STATIC
     src/chttp.c
+    src/chttp_address.c
+    src/chttp_string.c
 )
 target_include_directories(chttp PRIVATE include)
 target_link_libraries(chttp PRIVATE ws2_32)

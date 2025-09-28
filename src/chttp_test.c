@@ -1,7 +1,10 @@
 #include "chttp.h"
 
+#include <assert.h>
 #include <stdlib.h>
 #include <stdio.h>
+
+const char* TESTURL = "http://jsonplaceholder.typicode.com/todos";
 
 int main(void)
 {
@@ -11,7 +14,7 @@ int main(void)
         exit(1);
     }
 
-    printf("Result:\n%s\n", res.result);
+    printf("Result:\n'%s'\n", res.result);
 
     return 0;
 }
